@@ -10,7 +10,7 @@ $(document).ready(function() {
     });
   });
 
-let images = ["../img/banner/AnyConv.com__sl1.webp", "../img/banner/AnyConv.com__sl2.webp"]; 
+let images = ["./img/banner/AnyConv.com__sl1.webp", "./img/banner/AnyConv.com__sl2.webp"]; 
 let currentImageIndex = 0;
 
 function changeImage() {
