@@ -13,7 +13,8 @@ body {
     margin-left: auto;
 }
 h1 {
-
+    
+    font-weight: 400;
 }
 h2 {
     
@@ -398,6 +399,11 @@ p {
        justify-content: center;
      }
 }
+@media screen and (max-width:768px ){
+    .winners {
+        height: auto;
+    }
+}
 
 /* slot */
 
@@ -406,6 +412,7 @@ p {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    margin-top: 30px;
     
 }
 .slot__items {
@@ -453,6 +460,7 @@ p {
         flex-wrap: wrap;
         justify-content: center;
         gap:30px;
+        margin-top: 0px;
      }
     .slot__item { 
         display: flex;
@@ -462,3 +470,6 @@ p {
         width: 40%;
     }
 }
+
+/* text */
+
