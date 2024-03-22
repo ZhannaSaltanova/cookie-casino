@@ -9,13 +9,26 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <a href="/"><img src="./img/mystake-logo.webp" alt="logo" class="logo"></a>
+        <div class="header__top">
+            <div class="logo">
+                <a href="/"><img src="./img/logo.webp" alt="logo" class="logo"></a>
+            </div>
+            <nav class="navbar">
+                <div class="navbar-links">
+                    <ul>
+                        <li><button class="first"><a href="#" class="nav-link">MELDEN SIE SICH AN</a></button></li>
+                        <li><button class="second"><a href="#" class="nav-link">ANMELDUNG</a></button></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <nav class="navbar">
-            <div class="navbar-links">
-                <a href="#" class="nav-link"><button class="btn">Jouer</button></a>
-                <a href="#" class="nav-link">Blog MyStake</a>
+        <div class="header__bottom">
+            <div class="header__bottom-links">
+                <ul>
+                    <li><a href="contact.html" class="link-nav">Cookie casino</a></li>
+                    <li><a href="contact.html" class="link-nav">Contact</a></li>
+                    <li><button class='btn-coup'><a href="#" class="link-coup">Coupon</a></button></li>
+                </ul>
             </div>
             <a href="#" class="burger-button">
                 <div></div>
@@ -26,16 +39,17 @@
                 <div class="burgermenu">
                     <a href="#" class="close"></a>
                     <nav class="burger-list">
-                        <div class="border">
-                            <a href="#" class="nav-link">Jouer</a>
-                        </div>
-                        <div class="border">
-                            <a href="#" class="nav-link">Blog MyStake</a>
-                        </div>
+                        <li><a href="contact.html" class="link-nav">Cookie casino</a></li>
+                        <li><a href="contact.html" class="link-nav">Contact</a></li>
+                        <li><button class='btn-coup'><a href="#" class="link-coup">Coupon</a></button></li>
+                        <li><button class="first-mob"><a href="#" class="nav-link">MELDEN SIE SICH AN</a></button></li>
                     </nav>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
