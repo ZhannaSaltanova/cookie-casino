@@ -2,6 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'OpenSans', sans-serif;
+    background-color:#171f36;
 }
 h1 {
 
@@ -228,3 +229,134 @@ p {
         background-color: #ececed;
     }
  }
+
+ /* banner */
+.banner { 
+    width: 100%;
+    padding: 0px 30px;
+}
+.banner__wrapper {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+ }
+.banner__content {
+    margin-top: 20px;
+ }
+
+
+.banner__content img {
+    max-width: 282px;
+    width: 100%;
+}
+.banner__content a {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.banner__content a strong {
+    color: #fb0;
+    text-shadow: 1px 1px 4px rgba(71,7,7,.93);
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.2;
+    position: absolute;
+    left: 58px;
+    top: 10px;
+    white-space: nowrap;
+}
+.banner__content span{
+    color: #fff900;
+    text-shadow: 0 0 8px #f60;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+.price {
+    display: flex;
+    position: absolute;
+    left: 80px;
+    top: 45px;
+}
+
+.banner__slider {
+    position: relative;
+    max-width: 689px;
+    object-fit: cover;
+    width: 100%;
+    height: auto; 
+    margin-top: 10px;
+}
+
+.banner__slider img {
+    width: 100%; 
+    height: auto;
+}
+
+.winners {
+    color: white; 
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+}
+.winners h3 {
+    font-size: 16px;
+    color: #feae00;
+    line-height: 1.3;
+    text-align: center;
+    margin: 15px 0;
+    text-transform: unset;
+}
+.buttons {
+    display: flex; 
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 20px; 
+}
+.buttons button {
+    cursor: pointer;
+    font-size: 11px;
+    color: #fff;
+    border: 1px solid #feae00;
+    background-color: inherit;
+    padding:10px;
+    text-align: center;
+}
+.buttons button:nth-of-type(1) {
+    border-radius: 6px 0 0 6px;
+}
+.buttons button:nth-of-type(2) {
+    border-radius: 0 6px 6px 0;
+}
+.buttons button.active {
+    background-image: -o-linear-gradient(45deg,#e74c3c,#f39c12);
+    background-image: linear-gradient(45deg,#e74c3c,#f39c12);
+}
+
+.content {
+    display: none; /* По умолчанию скрыть все блоки контента */
+}
+
+.content.active {
+    display: block; /* Показывать активный контент */
+}
+
+.winner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Отступ между элементами списка */
+}
+
+.avatar {
+    /* Стили для аватара победителя */
+}
+
+.name, .email, .amount {
+    margin-right: 10px; /* Отступы внутри блока победителя */
+}
+
+
