@@ -323,7 +323,7 @@ p {
     color: #fff;
     border: 1px solid #feae00;
     background-color: inherit;
-    padding:10px;
+    padding:10px 30px;
     text-align: center;
 }
 .buttons button:nth-of-type(1) {
@@ -338,25 +338,57 @@ p {
 }
 
 .content {
-    display: none; /* По умолчанию скрыть все блоки контента */
+    display: none; 
 }
 
 .content.active {
-    display: block; /* Показывать активный контент */
+    display: block;
 }
 
 .winner {
     display: flex;
-    align-items: center;
-    margin-bottom: 10px; /* Отступ между элементами списка */
+    justify-content: flex-start;
+    align-items:center;
+    margin-bottom: 10px; 
+    gap: 10px;
 }
 
 .avatar {
-    /* Стили для аватара победителя */
+    max-width: 40px;
 }
 
-.name, .email, .amount {
-    margin-right: 10px; /* Отступы внутри блока победителя */
+.amount {
+    margin-left: auto;
+    height: 28px;
+    white-space: nowrap;
+    border-radius: 14px 0 0 14px;
+    text-align: right;
+    padding: 0 4px 0 5px;
+    background: -webkit-gradient(linear,left top,left bottom,from(#feae00),to(#fa7c34));
+    background: -o-linear-gradient(top,#feae00,#fa7c34);
+    background: linear-gradient(180deg,#feae00,#fa7c34);
+    -webkit-box-shadow: 0 0 5px 0 #feae00, inset 0 0 3px 1px #feae00;
+    box-shadow: 0 0 5px 0 #feae00, inset 0 0 3px 1px #feae00;
+    color: #171f36;
+    font-size: 11px;
+    line-height: 28px;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:flex-start;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1024px){
+    .banner { 
+        padding: 0px 15px;
+    }
+    .banner__wrapper {
+       justify-content: center;
+     }
 }
 
 
