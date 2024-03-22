@@ -1,0 +1,167 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+.header {
+    background-color: #1B1B22;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: auto;
+    min-height: 100px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.logo {
+    width: 100%;
+    max-width: 150px;
+}
+.navbar {
+    width: 50%;
+}
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    gap: 30px;
+    width: 100%;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+
+}
+.btn {
+    display: block;
+    padding: 8px 15px;
+    background-color: #467FF7;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
+}
+@media screen and (max-width:768px) {
+    .navbar-links {
+        display: none;
+    }
+}
+@media screen and (max-width:478px) {
+    .header{
+        height: auto;
+        padding-left: 30px;
+    }
+}
+
+/* burger */
+.wrapper {
+    display: none;
+ }
+
+ @media screen and (max-width: 768px) {
+    .wrapper {
+        display: block;
+        position: static;
+        z-index: 902;
+    }
+    
+    .burgermenu {
+        position: fixed;
+        right: 0;
+        top: 100px; 
+        width: 100%;
+        height: 0; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: #ffffff;
+        overflow: hidden;
+        transition: height 0.3s ease; 
+        z-index: 903;
+        padding-left: 20px;
+    }
+    
+    .burgermenu_active {
+        height: 20%;
+    }
+    
+    .burger-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 100%;
+    }
+    
+    .burger-list a {
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        color: #55595c;
+        font-size: 14px;
+    }
+    
+    .burger-button {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 50px;
+        height: 43px;
+        position: fixed;
+        right: 20px;
+        top: 30px;
+        z-index: 904;
+    }
+    
+    .close {
+        display: block;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(50%, -50%);
+        cursor: pointer;
+    }
+    
+    .close:before,
+    .close:after {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 20px;
+        background:#356de5;
+    }
+    
+    .close:before {
+        transform: rotate(45deg);
+    }
+    
+    .close:after {
+        transform: rotate(-45deg);
+    }
+    
+    .burger-button div {
+        width: 25px;
+        height: 3px;
+        background-color: #356de5;
+    }
+ }
